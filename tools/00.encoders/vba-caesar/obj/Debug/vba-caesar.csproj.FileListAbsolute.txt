@@ -1,0 +1,7 @@
+\\192.168.45.245\visualstudio\vba-caesar\bin\Debug\vba-caesar.exe.config
+\\192.168.45.245\visualstudio\vba-caesar\bin\Debug\vba-caesar.exe
+\\192.168.45.245\visualstudio\vba-caesar\bin\Debug\vba-caesar.pdb
+\\192.168.45.245\visualstudio\vba-caesar\obj\Debug\vba-caesar.csprojAssemblyReference.cache
+\\192.168.45.245\visualstudio\vba-caesar\obj\Debug\vba-caesar.csproj.CoreCompileInputs.cache
+\\192.168.45.245\visualstudio\vba-caesar\obj\Debug\vba-caesar.exe
+\\192.168.45.245\visualstudio\vba-caesar\obj\Debug\vba-caesar.pdb

