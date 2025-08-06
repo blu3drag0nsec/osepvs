@@ -1,0 +1,10 @@
+Z:\tools\00.encoders\XORme\XORme\obj\Debug\XORme.csprojAssemblyReference.cache
+Z:\tools\00.encoders\XORme\XORme\obj\Debug\XORme.Form1.resources
+Z:\tools\00.encoders\XORme\XORme\obj\Debug\XORme.Properties.Resources.resources
+Z:\tools\00.encoders\XORme\XORme\obj\Debug\XORme.csproj.GenerateResource.cache
+Z:\tools\00.encoders\XORme\XORme\obj\Debug\XORme.csproj.CoreCompileInputs.cache
+Z:\tools\00.encoders\XORme\XORme\bin\Debug\XORme.exe.config
+Z:\tools\00.encoders\XORme\XORme\bin\Debug\XORme.exe
+Z:\tools\00.encoders\XORme\XORme\bin\Debug\XORme.pdb
+Z:\tools\00.encoders\XORme\XORme\obj\Debug\XORme.exe
+Z:\tools\00.encoders\XORme\XORme\obj\Debug\XORme.pdb

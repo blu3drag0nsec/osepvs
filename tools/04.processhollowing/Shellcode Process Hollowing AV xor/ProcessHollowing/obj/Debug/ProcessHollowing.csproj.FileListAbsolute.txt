@@ -1,0 +1,6 @@
+Z:\tools\04.processhollowing\ProcessHollowing\bin\Debug\ProcessHollowing.exe
+Z:\tools\04.processhollowing\ProcessHollowing\bin\Debug\ProcessHollowing.pdb
+Z:\tools\04.processhollowing\ProcessHollowing\obj\Debug\ProcessHollowing.csprojAssemblyReference.cache
+Z:\tools\04.processhollowing\ProcessHollowing\obj\Debug\ProcessHollowing.csproj.CoreCompileInputs.cache
+Z:\tools\04.processhollowing\ProcessHollowing\obj\Debug\ProcessHollowing.exe
+Z:\tools\04.processhollowing\ProcessHollowing\obj\Debug\ProcessHollowing.pdb
