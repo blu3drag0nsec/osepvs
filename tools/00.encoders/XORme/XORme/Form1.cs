@@ -54,6 +54,19 @@ namespace XORme
             return sb.ToString();
         }
 
+        private string FormatHollow(byte[] data)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"byte[] buf = new byte[{data.Length}] {{");
+            for (int i = 0; i < data.Length; i++)
+            {
+                sb.AppendFormat("0x{0:x2}", data[i]);
+                if (i != data.Length - 1) sb.Append(",");                
+            }
+            sb.Append("};");
+            return sb.ToString();
+        }
+
         private string FormatVBA(byte[] data)
         {
             StringBuilder sb = new StringBuilder();
@@ -112,6 +125,27 @@ namespace XORme
                 }
 
                 txDestination.Text = FormatVBA(result);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                byte[] inputBytes = ParseInput(txSource.Text);
+                byte[] keyBytes = ParseKey(txXORKey.Text);
+
+                byte[] result = new byte[inputBytes.Length];
+                for (int i = 0; i < inputBytes.Length; i++)
+                {
+                    result[i] = (byte)(inputBytes[i] ^ keyBytes[i % keyBytes.Length]);
+                }
+
+                txDestination.Text = FormatHollow(result);
             }
             catch (Exception ex)
             {

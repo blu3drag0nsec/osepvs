@@ -33,6 +33,7 @@
             this.btnC = new System.Windows.Forms.Button();
             this.btnV = new System.Windows.Forms.Button();
             this.txXORKey = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txSource
@@ -51,6 +52,7 @@
             this.txDestination.Location = new System.Drawing.Point(593, 0);
             this.txDestination.Multiline = true;
             this.txDestination.Name = "txDestination";
+            this.txDestination.ReadOnly = true;
             this.txDestination.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.txDestination.Size = new System.Drawing.Size(504, 585);
             this.txDestination.TabIndex = 1;
@@ -83,11 +85,22 @@
             this.txXORKey.TabIndex = 4;
             this.txXORKey.Text = "b3 1b fa ee";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(511, 281);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "hollow.xml";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1097, 585);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txXORKey);
             this.Controls.Add(this.btnV);
             this.Controls.Add(this.btnC);
@@ -107,6 +120,7 @@
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnV;
         private System.Windows.Forms.TextBox txXORKey;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -1,0 +1,9 @@
+X:\PSByPassCLM\PSBypassCLM\PSBypassCLM\obj\x64\Release\PsBypassCLM.csprojAssemblyReference.cache
+X:\PSByPassCLM\PSBypassCLM\PSBypassCLM\obj\x64\Release\PsBypassCLM.csproj.CoreCompileInputs.cache
+X:\PSByPassCLM\PSBypassCLM\PSBypassCLM\bin\x64\Release\PsBypassCLM.exe.config
+X:\PSByPassCLM\PSBypassCLM\PSBypassCLM\bin\x64\Release\PsBypassCLM.exe
+X:\PSByPassCLM\PSBypassCLM\PSBypassCLM\bin\x64\Release\PsBypassCLM.pdb
+X:\PSByPassCLM\PSBypassCLM\PSBypassCLM\bin\x64\Release\System.Management.Automation.dll
+X:\PSByPassCLM\PSBypassCLM\PSBypassCLM\obj\x64\Release\PsBypassCLM.csproj.CopyComplete
+X:\PSByPassCLM\PSBypassCLM\PSBypassCLM\obj\x64\Release\PsBypassCLM.exe
+X:\PSByPassCLM\PSBypassCLM\PSBypassCLM\obj\x64\Release\PsBypassCLM.pdb
