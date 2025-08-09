@@ -1,0 +1,14 @@
+X:\ApplockerBypassExternalBinary\obj\x64\Release\SharpReflectivePEInjection.csprojAssemblyReference.cache
+X:\ApplockerBypassExternalBinary\obj\x64\Release\SharpReflectivePEInjection.csproj.CoreCompileInputs.cache
+X:\ApplockerBypassExternalBinary\bin\x64\Release\SharpReflectivePEInjection.exe.config
+X:\ApplockerBypassExternalBinary\bin\x64\Release\SharpReflectivePEInjection.exe
+X:\ApplockerBypassExternalBinary\bin\x64\Release\SharpReflectivePEInjection.pdb
+X:\ApplockerBypassExternalBinary\obj\x64\Release\SharpReflectivePEInjection.exe
+X:\ApplockerBypassExternalBinary\obj\x64\Release\SharpReflectivePEInjection.pdb
+Z:\tools\06.applockerbypassexternal\ApplockerBypassExternalBinary\bin\x64\Release\SharpReflectivePEInjection.exe.config
+Z:\tools\06.applockerbypassexternal\ApplockerBypassExternalBinary\bin\x64\Release\SharpReflectivePEInjection.exe
+Z:\tools\06.applockerbypassexternal\ApplockerBypassExternalBinary\bin\x64\Release\SharpReflectivePEInjection.pdb
+Z:\tools\06.applockerbypassexternal\ApplockerBypassExternalBinary\obj\x64\Release\SharpReflectivePEInjection.csprojAssemblyReference.cache
+Z:\tools\06.applockerbypassexternal\ApplockerBypassExternalBinary\obj\x64\Release\SharpReflectivePEInjection.csproj.CoreCompileInputs.cache
+Z:\tools\06.applockerbypassexternal\ApplockerBypassExternalBinary\obj\x64\Release\SharpReflectivePEInjection.exe
+Z:\tools\06.applockerbypassexternal\ApplockerBypassExternalBinary\obj\x64\Release\SharpReflectivePEInjection.pdb
